@@ -9,7 +9,7 @@ const BASE_URL =import.meta.env.MODE === "developement"? "http://localhost:4000"
 export const useAuthStore = create((set, get) => ({
     authUser: JSON.parse(localStorage.getItem("authUser")) || null,
     isSigningUp: false,
-    isLoggingIng: false,
+    isLoggingIn: false,
     isUpdatingProfile: false,
     ifCheckingAuth: true,
     onlineUsers: [],
